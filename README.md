@@ -59,6 +59,8 @@ ogg
 # IOS PWA support
 I add these to `index.html` and `app.html`, so now it support IOS PWA.
 ~~~html
+<link rel="icon" type="png" sizes="512x512" href="./pwa-files/touch-icon512.png">
+<link rel="manifest" href="./pwa-files/manifest.webmanifest">
 <meta name='apple-mobile-web-app-capable' content='yes'>
 <meta name='apple-mobile-web-app-title' content='Incredibox'>
 <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
