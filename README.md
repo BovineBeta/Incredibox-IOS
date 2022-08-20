@@ -9,6 +9,7 @@ All the differences seem to be just `js/main.min.js`, `js/index.min.js` and all 
 
 ### Why we can't use the [Incredibox (hacked source code)](https://github.com/DarkReaper231/Incredibox) on Safari for IOS? 
 Because Safari for IOS doesn't support to decord `.ogg` files. In Incredibox Android version and Windows version, the audios files are `.ogg`. But in IOS version, the audios files are `.mp3`. The source code hacked from the Incredibox Android version, so Safari won't play it normally. 
+![ Safari for IOS doesn't support to decord .ogg files](https://user-images.githubusercontent.com/83176414/185727489-8aa38d97-00d9-43e7-a38c-655c8eb0855f.png)
 
 ### But why it work on some websites like`Wiktionary.org`? 
 `Wiktionary.org` actually load the `.ogg` files along with these two scripts: 
@@ -63,7 +64,13 @@ I add these to `index.html` and `app.html`, so now it support IOS PWA.
 <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
 <link href='./pwa-files/touch-icon.png' rel='apple-touch-icon'>
 ~~~
+Now it look really like Incredibox for IOS. XD
+
+![PWA](https://user-images.githubusercontent.com/83176414/185727186-3383df2c-8b82-4b43-8f69-4fc3f23f7590.png)
+
 Unfortunately, orientation is not supported on IOS PWA. So the PWA can't keep landscape.
 ~~~json
+//IOS PWA doesn't support
 "orientation": "landscape",
 ~~~
+[![orientation](https://user-images.githubusercontent.com/83176414/185727432-177d9086-3967-4265-9b74-a47318467122.png)](https://caniuse.com/?search=orientation)
