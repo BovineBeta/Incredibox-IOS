@@ -55,3 +55,4 @@ $ cd ./extract/app/asset-v8/sound
 $ ls
 ogg
 ~~~
+# PWA support
