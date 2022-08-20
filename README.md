@@ -7,10 +7,10 @@ Except for the audio assets, the IOS version looks similar to the PC version and
 
 All the differences seem to be just `js/main.min.js`, `js/index.min.js` and all audio assets. 
 
-# Why we can't use the [Incredibox](https://github.com/DarkReaper231/Incredibox)(hacked source code) on Safari for IOS? 
-Because Safari for IOS doesn't support to decord `.ogg` files. In Incredibox Android version and Windows version, the audios files are `.ogg`. Safari won't play it normally. In IOS version, the audios files are `.mp3`. 
+### Why we can't use the [Incredibox (hacked source code)](https://github.com/DarkReaper231/Incredibox) on Safari for IOS? 
+Because Safari for IOS doesn't support to decord `.ogg` files. In Incredibox Android version and Windows version, the audios files are `.ogg`. But in IOS version, the audios files are `.mp3`. The source code hacked from the Incredibox Android version, so Safari won't play it normally. 
 
-## But why it work on some websites like`Wiktionary.org`? 
+### But why it work on some websites like`Wiktionary.org`? 
 `Wiktionary.org` actually load the `.ogg` files along with these two scripts: 
 ~~~
 ogv-worker-audio.js
@@ -27,7 +27,7 @@ osname = "ios",
 appTotalVersion = appCN && "ios" == osname ? 4 : 8,
 ~~~
 Safari supports `.mp3`, so you can play Incredibox on Safari by it. 
-# How to know the audio assets type in different versions?
+### How to know the audio assets type in different versions?
 You can use unzip software like [7-zip](https://www.7-zip.org/) to extrat the audio assets from `.apk` 
 ~~~shell
 $ unzip -q incredibox.apk -d ./apk-extract
@@ -55,4 +55,15 @@ $ cd ./extract/app/asset-v8/sound
 $ ls
 ogg
 ~~~
-# PWA support
+# IOS PWA support
+I add these to `index.html` and `app.html`, so now it support IOS PWA.
+~~~html
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='apple-mobile-web-app-title' content='Incredibox'>
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+<link href='./pwa-files/touch-icon.png' rel='apple-touch-icon'>
+~~~
+Unfortunately, orientation is not supported on IOS PWA. So the PWA can't keep landscape.
+~~~json
+"orientation": "landscape",
+~~~
