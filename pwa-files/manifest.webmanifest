@@ -1,0 +1,26 @@
+{
+  "name": "Incredibox",
+  "short_name": "Incredibox",
+  "description": "Incredibox - Create your craziest beat!",
+  "start_url": "../",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#FAFAFA",
+  "theme_color": "#FAFAFA",
+  "categories": ["games", "music", "education"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "./touch-icon192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./touch-icon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
