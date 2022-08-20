@@ -11,7 +11,7 @@ All the differences seem to be just `js/main.min.js`, `js/index.min.js` and all 
 Because Safari for IOS doesn't support to decord `.ogg` files. In Incredibox Android version and Windows version, the audios files are `.ogg`. But in IOS version, the audios files are `.mp3`. The source code hacked from the Incredibox Android version, so Safari won't play it normally. 
 ![ Safari for IOS doesn't support to decord .ogg files](https://user-images.githubusercontent.com/83176414/185727489-8aa38d97-00d9-43e7-a38c-655c8eb0855f.png)
 
-### But why it work on some websites like`Wiktionary.org`? 
+## But why it work on some websites like`Wiktionary.org`? 
 `Wiktionary.org` actually load the `.ogg` files along with these two scripts: 
 ~~~
 ogv-worker-audio.js
@@ -28,7 +28,7 @@ osname = "ios",
 appTotalVersion = appCN && "ios" == osname ? 4 : 8,
 ~~~
 Safari supports `.mp3`, so you can play Incredibox on Safari by it. 
-### How to know the audio assets type in different versions?
+## How to know the audio assets type in different versions?
 You can use unzip software like [7-zip](https://www.7-zip.org/) to extrat the audio assets from `.apk` 
 ~~~shell
 $ unzip -q incredibox.apk -d ./apk-extract
@@ -68,7 +68,7 @@ Now it look really like Incredibox for IOS. XD
 
 ![PWA](https://user-images.githubusercontent.com/83176414/185727186-3383df2c-8b82-4b43-8f69-4fc3f23f7590.png)
 
-Unfortunately, orientation is not supported on IOS PWA. So the PWA can't keep landscape.
+Unfortunately, orientation is not supported on IOS PWA. So the PWA can't keep landscape. We need to keep the phone landscape or we can't play the game. 
 ~~~json
 //IOS PWA doesn't support
 "orientation": "landscape",
