@@ -8,8 +8,8 @@ Except for the audio assets, the IOS version looks similar to the PC version and
 All the differences seem to be just `js/main.min.js`, `js/index.min.js` and all audio assets. 
 
 ### Why we can't use the [Incredibox (hacked source code)](https://github.com/DarkReaper231/Incredibox) on Safari for IOS? 
-Because Safari for IOS doesn't support to decord `.ogg` files. In Incredibox Android version and Windows version, the audios files are `.ogg`. But in IOS version, the audios files are `.mp3`. The source code hacked from the Incredibox Android version, so Safari won't play it normally. 
-![ Safari for IOS doesn't support to decord .ogg files](https://user-images.githubusercontent.com/83176414/185727489-8aa38d97-00d9-43e7-a38c-655c8eb0855f.png)
+Because Safari for IOS doesn't support to decord `.ogg` files. In Incredibox Android version and Windows version, the audios files are `.ogg`. But in IOS version, the audios files are `.mp3`. The source code were hacked from the Incredibox Android version, so Safari won't play the audio files normally. 
+![ Safari for IOS doesn't support to decode .ogg files](https://user-images.githubusercontent.com/83176414/185727489-8aa38d97-00d9-43e7-a38c-655c8eb0855f.png)
 
 ## But why it work on some websites like`Wiktionary.org`? 
 `Wiktionary.org` actually load the `.ogg` files along with these two scripts: 
